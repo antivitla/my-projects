@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Мои проекты</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400;1,700&family=Alice&display=swap" rel="stylesheet">
+  <link href="assets/my-projects.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Author -->
+  <a href="https://mr-woodman.ru" target="_blank" class="projects-author">
+    <img src="assets/vitla.jpg" height="100" class="projects-author-avatar">
+    <h1 class="projects-author-info">
+      <strong>Виталий Кулешин</strong><br>
+      Личные проекты<br>
+      mr-woodman.ru<br>
+    </h1>
+  </a>
+
+  <main id="app">
+    <ul class="projects">
+
+      <!-- Heroes -->
+      <li class="project wide">
+        <header class="project-header">
+          <a href="https://mr-woodman.ru/heroes" target="_blank">
+            <div class="project-media">
+              <img src="assets/heroes.png" height="200" style="filter: invert(1)">
+            </div>
+            <h2 class="project-title">Герои России</h2>
+            <p class="project-subtitle">Специальная военная операция на Украине</p>
+          </a>
+        </header>
+        <main class="project-description">
+          <p>Информации о героях спецоперации достаточно много и хотелось бы создать свой контент на эту тему, с забавной статистикой (1).</p>
+          <p>Но для этого ведь нужно иметь фото, даты, награды, звания, истории, теги и пр. информацию в удобном формате, например JSON (2). Его нужно сделать удобно доступным для всех.</p>
+          <p>Но для этого нужно ведь написать сборщик героев, который будет собирать, распознавать и сохранять эту информацию по сайтам и телеграм-каналам (3). Его код тоже пускай будет открыт.</p>
+          <ul>
+            <li><a href="https://mr-woodman.ru/heroes" target="_blank">mr-woodman.ru/heroes</a></li>
+          </ul>
+        </main>
+      </li>
+
+      <!-- Titamota -->
+      <li class="project">
+        <header class="project-header">
+          <a href="https://mr-woodman.ru/titamota" target="_blank">
+            <div class="project-media">
+              <img src="assets/titamota.svg" height="150">
+            </div>
+            <h2 class="project-title">Titamóta</h2>
+            <p class="project-subtitle">Тайм-трекер</p>
+          </a>
+        </header>
+        <main class="project-description">
+          <p>Простой тайм-трекер задач и денег, чтоб не отвлекал внимания, чтобы бесплатно была мощь гибкой структуризации, чтоб отчеты — разве найдешь? Приходится самому делать.</p>
+          <p>Главное чтобы сразу начать трекать, не разбираясь и не думая. Чтоб дизайн не отвлекал на себя внимание. Думать и уделять внимание надо работе, а не тайм-трекеру.</p>
+          <p>Простой и скрыто мощный. Для моих собратьев — фрилансеров.</p>
+          <ul>
+            <li><a href="https://mr-woodman.ru/titamota" target="_blank">mr-woodman.ru/titamota</a></li>
+          </ul>
+        </main>
+      </li>
+
+      <!-- Bodysize -->
+      <li class="project">
+        <header class="project-header">
+          <a href="https://mr-woodman.ru/bodysize" target="_blank">
+            <div class="project-media">
+              <img src="assets/bodysize.png" height="150">
+            </div>
+            <h2 class="project-title">Типовая фигура</h2>
+            <p class="project-subtitle">Подбор типовой фигуры по росту<br>и трем обхватам</p>
+          </a>
+        </header>
+        <main class="project-description">
+          <p>Когда шьешь на заказ, удобно снимать лишь ключевые мерки — рост, обхват груди, талии и бедер — а остальные полсотни находить по ближайшей типовой фигуре.</p>
+          <p>Это простой фильтр типовой фигуры с картинками. Умеет найти ближайшую типовую фигуру если заданы размеры клиента.</p>
+          <p>Умеет сохранить все это плюс имя клиента в ссылке, чтоб использовать как закладку — актуально для большой базы клиентов.</p>
+          <ul>
+            <li><a href="https://mr-woodman.ru/bodysize/?setType=male&setHeight=182&setChest=92&setWaist=70&setHip=93.9&name=Виталий+Кулешин&height=180&chest=90&hip=90&waist=78" target="_blank" style="word-break: break-all;">mr-woodman.ru/bodysize/?setType=male&setHeight=182&setChest=92&setWaist=70&setHip=93.9&name=Виталий+Кулешин&height=180&chest=90&hip=90&waist=78</a></li>
+          </ul>
+        </main>
+      </li>
+
+      <!-- Books -->
+      <li class="project wide" data-project-key="books">
+        <header class="project-header">
+          <a href="https://books.antivitla.ru" target="_blank">
+            <div class="project-media">
+              <img src="assets/books.jpg" height="150">
+            </div>
+            <h2 class="project-title">Книги</h2>
+            <p class="project-subtitle">Читалка и набор книг</p>
+          </a>
+        </header>
+        <main class="project-description">
+          <p>Хорошие книжки очень длинные и тормозят в браузере. Нужна читалка с бесшовной бесконечная подгрузка. И автоматически генерируемое оглавление... Так и скроллбар придется заново делать.</p>
+          <p>И лучше на веб-компонентах, потому что Pure&nbsp;JavaScript &trade;</p>
+          <ul>
+            <li><a href="https://books.antivitla.ru/gegel--nauka-logiki.html" target="_blank">Наука Логики. Гегель</a></li>
+            <li><a href="https://books.antivitla.ru/marks--engels--manifest-kommunisticheskoy-partii.html" target="_blank">Манифест Коммунистической партии. Маркс,&nbsp;Энгельс</a></li>
+            <li><a href="https://books.antivitla.ru/engels--proiskhozhdenie-semi-chastnoy-sobstvennosti-i-gosudarstva.html" target="_blank">Происхождение семьи, частной собственности и государства. Энгельс</a></li>
+          </ul>
+        </main>
+      </li>
+
+      <!-- Skoblimora -->
+      <li class="project wide">
+        <header class="project-header">
+          <a href="" target="_blank">
+            <div class="project-media">
+              <img src="assets/skoblimora-02.png" height="200">
+            </div>
+            <h2 class="project-title">Skoblimora</h2>
+            <p class="project-subtitle">Алхимический помощник для Skyrim, Oblivion и Morrowind</p>
+          </a>
+        </header>
+        <main class="project-description">
+          <p>Вот идешь по предгорьям <del>Северного Кавказа</del> Skyrim'а, собираешь ингредиенты. Каких нужно собрать побольше, а какие нужны лишь для прокачки алхимии?</p>
+          <p>Или ситуация целеполагания — нужно найти не просто полезные рецепты, а убойные комбинации, например, урона от яда вместе с повышением уязвимости к яду.</p>
+          <p><em>Это интересная математическая задача поиска полезных пересечений связанных по смыслу массивов данных.</em></p>
+        </main>
+      </li>
+
+      <li class="project">
+        <header class="project-header">
+            <div class="project-media"></div>
+          <h2 class="project-title">Minota</h2>
+          <p class="project-subtitle">Сервис заметок</p>
+        </header>
+        <main class="project-description">
+          <p>Долгострой мечты.</p>
+          <p>Каждый кодер должен построить дом, посадить дерево и написать сервис заметок. Много мыслей, кода и прототипов, но очень с трудом нащупывается путь к цели.</p>
+          <p>Однажды будет.</p>
+        </main>
+      </li>
+    </ul>
+
+    <p class="projects-more">Остальное на <a href="https://github.com/antivitla" target="_blank"><strong>github.com/antivitla</strong></a></p>
+  </main>
+
+  <footer class="app-footer">
+    <a class="app-footer__artist" href="http://www.grekovstudio.ru/artists/now/potogin-vyacheslav-vladimirovich" target="_blank" title="Открыть страницу художника на сайте студии">
+      <div>
+        <strong>Потогин Вячеслав Владимирович</strong><br>
+        «Полярная станция в бухте Тихая»<br>
+        Студия военных художников им. Грекова, 2018 г.<br>
+      </div>
+      <img src="assets/grekov-logo.png" class="app-footer__mascot">
+    </a>
+  </footer>
+
+</body>
+</html>
