@@ -239,7 +239,7 @@ a {
 .project-media img {
   display: block;
   margin: 0 auto;
-  filter: sepia(0.25) opacity(0.75);
+  filter: sepia(0.25) opacity(0.875);
 }
 
 .project-icon {
